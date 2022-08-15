@@ -7,6 +7,8 @@ import { initKeycloak, memory } from './config/keycloak';
 
 const app: Application = express();
 
+const { PORT } = process.env;
+
 app.use(session({
     secret: '1234567890',
     resave: false,
@@ -17,10 +19,6 @@ app.use(session({
 app.use(initKeycloak().middleware());
 
 import routes from './routes';
-
-
-const { PORT } = process.env;
-
 
 app.use('/', routes);
 
