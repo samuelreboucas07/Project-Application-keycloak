@@ -1,5 +1,8 @@
 import express, { Application } from 'express';
 import session from 'express-session';
+
+require('dotenv').config();
+
 import { initKeycloak, memory } from './config/keycloak';
 
 const app: Application = express();
@@ -15,7 +18,6 @@ app.use(initKeycloak().middleware());
 
 import routes from './routes';
 
-require('dotenv').config();
 
 const { PORT } = process.env;
 

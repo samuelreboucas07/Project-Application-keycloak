@@ -3,13 +3,15 @@ import Keycloak from 'keycloak-connect';
 
 let keycloak: any;
 
+const { CLIENT_SECRET_KEY, AUTH_SERVER, CLIENT_ID, REALM } = process.env;
+
 var keycloakConfig: any = {
-    "realm": "Demo-Realm",
-    "auth-server-url": "http://localhost:8080/auth/",
+    "realm": REALM,
+    "auth-server-url": AUTH_SERVER,
     "ssl-required": "external",
-    "clientId": "Project-Application-keycloak",
+    "clientId": CLIENT_ID,
     "credentials": {
-        "secret": "wkG45EQMeCnHjqjWnKCEtGhb0GZa1JMK"
+        "secret": CLIENT_SECRET_KEY
     },
     'bearerOnly': true,
 };
