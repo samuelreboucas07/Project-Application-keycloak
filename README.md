@@ -60,10 +60,10 @@ Therefore, to generate the token it is necessary to access the ```/auth/realms/D
 ## Behavior
 
 * Token generated for user with permission named user.
-![key_user](https://github.com/samuelreboucas07/Project-Application-keycloak/tree/main/assets/key_user.gif)
+![key_user](https://github.com/samuelreboucas07/Project-Application-keycloak/blob/main/assets/key_user.gif)
 
 * Token generated for user with permission named admin.
-![key_admin](https://github.com/samuelreboucas07/Project-Application-keycloak/tree/main/assets/key_admin.gif)
+![key_admin](https://github.com/samuelreboucas07/Project-Application-keycloak/blob/main/assets/key_admin.gif)
 
 ## References:
 ### https://medium.com/devops-dudes/securing-node-js-express-rest-apis-with-keycloak-a4946083be51
